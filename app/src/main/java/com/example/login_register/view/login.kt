@@ -145,12 +145,14 @@ fun LoginPage(navController: NavController) {
                     }
                     Spacer(modifier = Modifier.height(20.dp))
 
-                    Text(
-                        "Create an Account ?",
-                        color = Color.Black,
-                        modifier = Modifier.clickable {navController.navigate("register")},
-                        fontSize = 15.sp
-                    )
+                    Button(onClick = {}, colors = ButtonDefaults.buttonColors(Color(0xFF407BFF))) {
+                        Text(
+                            "Create an Account ?",
+                            color = Color.White,
+                            modifier = Modifier.clickable { navController.navigate("register") },
+                            fontSize = 15.sp
+                        )
+                    }
 
 
                 }
